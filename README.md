@@ -16,8 +16,13 @@ Part I of the project caters to the evaluation of model performance on 10 sample
  
 ### Functions Used: 
 1.Function for fetching the S&P ticker lists (used as large Universe) - save_sp500_tickers()
+
 2. Functions for Stock Data Loading & Data Wrangling (Filling, Scaling, Binary Return Conversion)-load_stock_data(ticker), scale_data(dataframe), calculate_binary_returns(ticker_data)
+
 3. Functions for creating the dataset for explanatory variables (Both fundamental & Technical Indicators) - create_macro_feature_data(), technical_indicators(ticker_data), check_multicollinearity(feature_data)
+
 4. Functions for Model Predictions & Evaluation Metrics - KNN (X_train, X_test, y_train, y_test,params,tuning), LR (X_train, X_test, y_train, y_test,params,tuning)
+
 5. Functions for Hyperparameter Tuning - knn_hyper_parameter_tuning(X_train,y_train), lr_hyper_parameter_tuning(X_train,y_train)
+
 6. Main Function to generate the output dataframe - generate_output (ticker_list,feature_data_scaled,tuning)
