@@ -15,6 +15,7 @@ Part I of the project caters to the evaluation of model performance on 10 sample
 
  
 ### Functions Used: 
+
 1.Function for fetching the S&P ticker lists (used as large Universe) - save_sp500_tickers()
 
 2. Functions for Stock Data Loading & Data Wrangling (Filling, Scaling, Binary Return Conversion)-load_stock_data(ticker), scale_data(dataframe), calculate_binary_returns(ticker_data)
